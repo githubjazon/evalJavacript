@@ -37,7 +37,7 @@
 //     console.log(  mult + " * "+i+" = "+resultat);
 // }
 
-// ______________________________3_________________________________FINI 
+// ______________________________3___________________________________FINI 
 
 var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
 var saisie = window.prompt(`Veuillez choisir un prénom parmi : ${[...tab]}.`)
