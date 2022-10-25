@@ -1,5 +1,5 @@
 
-// __________________________________Exo js 05_________________________________
+// __________________________________Exo js 05_________________________________FINI
 
 // var reponse1 = window.prompt("Entrer votre nom");
 // var reponse2 = window.prompt("Entrer votre prénom");
@@ -11,7 +11,7 @@
 
 
 
-// __________________________________Exo js 06__________________________________
+// __________________________________Exo js 06__________________________________FINI
 
 // var a = 100;
 // var b = 100;
@@ -20,12 +20,12 @@
 
 
 // alert("Chaine de caractères : " + a);
-// alert(b-a);
+// alert(a-b);
 // alert(c+a);
 // d = false;
 
 
-// ____________________________________Exo js 07.1____________________________________
+// ____________________________________Exo js 07.1____________________________________FINI
 
 // const number = prompt("Ecrit un nombre");
 
@@ -39,14 +39,14 @@
 
 
 
-// ____________________________________Exo js 07.2____________________________________
+// ____________________________________Exo js 07.2____________________________________FINI
 
 
 // date = 2022;
 // annee = prompt("Quel est votre année de naissance ? ");
 // reponse1 = date - annee;
 
-// alert("Vous avez " + reponse1 + " ans");
+// alert("Vous avez " + reponse1 + " ans");   //ne compte pas les jours ni les mois mais juste les annéés
 
 // if(reponse1 <18) {
 // alert("Vous étes mignon, euuu mineur ");
@@ -57,7 +57,7 @@
 // }
 
 
-// ____________________________________Exo js 07.3____________________________________
+// ____________________________________Exo js 07.3____________________________________FINI
 
 
 
@@ -69,16 +69,17 @@
 //  }
 
  
-// divi = prompt("Entrer un operateur");
+// divi = prompt("Entrer un operateur de division ");
 // if(divi != "/") {
 //     alert("erreur de saisi");
+//     window.location.reload();
 // }
 // result = (er / eme);
 // alert(result);
 
 
 
-// ____________________________________ Exo js 08.1___________________________________
+// ____________________________________ Exo js 08.1___________________________________FINI
 
 // c = 1 ;
 // a =("Saisissez le prénom N° ")
@@ -90,19 +91,19 @@
 //     c++;
 // }
 
-// ____________________________________ Exo js 08.2___________________________________
+// ____________________________________ Exo js 08.2___________________________________FINI
 
 
 // document.write(" les nombres inférieurs à N. <br> <hr>");
 
 // var nbre = 0;
-// for(i=1; i<2137; i=i+1)
+// for(i=1; i<100; i=i+1)
 // {
 //   nbre = i;
 //   document.write(nbre+' ');
 // }
 
-// ____________________________________ Exo js 08.3___________________________________ PAS FINI BORDEL
+// ____________________________________ Exo js 08.3___________________________________ PAS FINI B0RDEL
 
 
 // document.write(" Programme qui saisit des entiers et bla bla bla. <br> <br>");
@@ -122,7 +123,7 @@
     
     
     
-    // ____________________________________ Exo js 08.5___________________________________
+    // ____________________________________ Exo js 08.5___________________________________FINI
     
   
 //     function copierCollerLâchement(mot) { 
@@ -142,13 +143,10 @@
 
 // window.location.reload();
 
-   // ____________________________________ Exo js 09.1___________________________________
+   // ____________________________________ Exo js 09.1___________________________________FINI
 
  
-   
- 
-
-
+// document.getElementById('butterfly');
 // nb = prompt("Entrer un nombre ");
 // mult = prompt("Entrer un multiplicateur");
 // result = (nb * mult);

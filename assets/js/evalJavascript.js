@@ -39,14 +39,14 @@
 
 // ______________________________3________________________________FINI 
 
-var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
-var saisie = window.prompt(`Veuillez choisir un prénom parmi : ${[...tab]}.`)
-if(tab.includes(saisie)){
-	tab.splice(tab.indexOf(saisie),1);
-	tab.push(" ");
-	alert(("Il reste : ") + tab);
-}
-else{alert("Mauvais prénom saisie")}
+// var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
+// var saisie = window.prompt(`Veuillez choisir un prénom parmi : ${[...tab]}.`)
+// if(tab.includes(saisie)){
+// 	tab.splice(tab.indexOf(saisie),1);
+// 	tab.push(" ");
+// 	alert(("Il reste : ") + tab);
+// }
+// else{alert("Mauvais prénom saisie")}
 
 // ______________________________4__________________________________
 
