@@ -149,14 +149,14 @@
  
 
 
-nb = prompt("Entrer un nombre ");
-mult = prompt("Entrer un multiplicateur");
-result = (nb * mult);
-document.getElementById("demo").innerHTML = html = "Le produit de " + nb +  " x " + mult +  " est égale à " + result;
+// nb = prompt("Entrer un nombre ");
+// mult = prompt("Entrer un multiplicateur");
+// result = (nb * mult);
+// document.getElementById("demo").innerHTML = html = "Le produit de " + nb +  " x " + mult +  " est égale à " + result;
 
 
-cube = (nb * nb * nb);
-document.getElementById("myP").innerHTML = "Le cube de " + nb + " est égale à " + cube;
+// cube = (nb * nb * nb);
+// document.getElementById("myP").innerHTML = "Le cube de " + nb + " est égale à " + cube;
 
 
    // ____________________________________ Exo js 09.2___________________________________
