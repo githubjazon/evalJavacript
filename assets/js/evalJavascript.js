@@ -1,4 +1,4 @@
-// ______________________________1_________________________________
+// ______________________________1 : Calcul du nombre de jeunes, de moyens et de vieux_________________________________
 
 // j = 0;
 // a = 0;
@@ -26,7 +26,8 @@
 
 
 
-// ______________________________2_________________________________FINI
+// ______________________________2 : Table de multiplication_________________________________FINI
+//appuyer sur F12 avant hein
 
 // mult = prompt("Saisir le multiplicateur ");
 // console.log("Table de multiplication par " + mult);
@@ -37,7 +38,7 @@
 //     console.log(  mult + " * "+i+" = "+resultat);
 // }
 
-// ______________________________3________________________________FINI 
+// ______________________________3 : recherche d'un prénom________________________________FINI 
 
 // var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
 // var saisie = window.prompt(`Veuillez choisir un prénom parmi : ${[...tab]}.`)
@@ -48,12 +49,20 @@
 // }
 // else{alert("Mauvais prénom saisie")}
 
-// ______________________________4__________________________________
+// ______________________________4 : total d'une commande__________________________________
+
+
+// prix = (prompt("Prix unitaire : "));
+// pu = 
+// qtecom = 
+// pap = 
+// rem = 
+// port = 
+// tot = ( pu * qtecom);
 
 
 
 
 
-
-// ______________________________5_________________________________
+// ____________________________ 5 : vérification d'un formulaire_________________________________
 
