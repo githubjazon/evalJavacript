@@ -6,28 +6,28 @@
 // c = 0;
 // var age;
 // do {
-//   personnes = window.prompt("Entrez votre âge");
-//   if ( age <20) {
+//   age = window.prompt("Entrez votre âge");
+//   if ( age <=20) {
 //     j++;
-    
-//   }
-//   if ( age >40) {
-//     a++;
-
+   
+//     if ( age <=40) {
+//         a++;
+        
 //   }
 //   else if ((age <=100)) {
 //     v++;
 //   }
 // }
+// }
 // while (age > 100) {
-//     window.alert("Il y a " + "" + j + "" + " jeunes\n " + "Il y a " + "" + a + "" + " adulte\n " + " Il y a " + "" + v + "" +" vieux\n " + " dont "+ " 1 " + "" + " centenaire ");
+//     window.alert("Il y a " + "" + j + "" + " jeunes\n " + "Il y a " + "" + a + "" + " adulte\n " + " Il y a " + "" + v + "" +" vieux\n " + " dont "+ c + "" + " centenaire ");
 // }
  
 
 
 
 // ______________________________2 : Table de multiplication_________________________________FINI
-//appuyer sur F12 avant hein
+//______Ouvrir la console avant !_________________
 
 // mult = prompt("Saisir le multiplicateur ");
 // console.log("Table de multiplication par " + mult);
@@ -52,15 +52,14 @@
 // ______________________________4 : total d'une commande__________________________________
 
 
-// prix = (prompt("Prix unitaire : "));
-// pu = 
-// qtecom = 
-// pap = 
-// rem = 
-// port = 
-// tot = ( pu * qtecom);
 
-
+// pu = (prompt("Prix unitaire : "));
+// qtecom = (prompt("Quantité commandé : "));
+// pap = (pu * qtecom);
+// // rem = 
+// // port = (2% tot);
+// // tot = ( pu * qtecom);
+// alert(pap);
 
 
 
