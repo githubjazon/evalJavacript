@@ -166,3 +166,16 @@
 //    function strtok(str1 , str2 , n) {
 // strtok(str1, ";", 3);
 //    }
+
+
+   // ____________________________________ Exo js 10.1___________________________________
+
+   // a = prompt("Choisir la taille du tableau ");
+   // b = prompt("Saisir les élements du tableau");
+   // let are = b.split(',');
+   // are.length = a;
+   // alert(are);
+
+      // ____________________________________ Exo js 10.2___________________________________
+
+   
