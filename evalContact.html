@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/evalContact.css">
+    <link rel="shortcut icon" href="#">
+    <title>evalContact</title>
+</head>
+
+<body>
+  
+
+    <nav class="barnoir">
+        <ul>
+            <li><a class="liencolor" href="index.html">Accueil</a></li>
+            <li><a class="liencolor" href="tableau.html">Tableau</a></li>
+            <li><a class="liencolor" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+ 
+    <h1>Put**n de formulaire</h1>
+    <hr>
+
+    <form name="RegForm" action="http://bienvu.net/script.php" onsubmit="return W3docs()" method="post" class="w3docs">
+        <p>* Ces zones sont obligatoires</p>
+        <br>
+        <fieldset class="coord">
+            <legend>Vos Coordonnées</legend>
+            <label for="nom">Votre nom* : <input required type="text" name="nom" id="nom" ></label><br>
+            <label for="prenom">Votre prénom* : <input required type="text" name="prenom" id="prenom"></label><br>
+            <br>
+
+            <p class="sexe" >sexe* : </p>
+            <label for="genre"></label><input  type="radio" name="genre" value="féminin" id="genre"> Féminin
+            <label for="genre2"></label><input type="radio" name="genre2" value="Masculin" id="genre2"> Masculin <br>
+            <br>
+            <label for="date">Date de naissance : <input type="date"          name="date" id="date"></label><br>
+            <label for="cp">Code postal* :        <input required type="text" name="cp" id="cp"></label><br>
+            <label for="adresse">Adresse :        <input type="text"          name="adresse" id="adresse"></label><br>
+            <label for="ville">Ville :            <input type="text"          name="ville" id="ville"></label><br>
+            <label for="mail">Email* :            <input required type="text" name="mail" placeholder="dave.loper@afpa.fr" id="mail" size="20" maxlength="50"><br>
+
+        </fieldset><br>
+        <br>
+        <fieldset class="coord">
+            <legend >Votre demande</legend>
+            <label for="sujet" name="sujet">Sujet* :</label>
+            <select type="text" value="" name="sujet" id="sujet">
+                <option required value="selected" placeholder> Selectionner un sujet</option>
+                <option required value="mcm">Mes commandes</option>
+                <option required value="ques">Question sur un produit</option>
+                <option required value="rec">Réclamation</option>
+                <option required value="autres">Autres</option>
+            </select><br>
+            <br>
+            <label for="question">Votre question* :</label>
+            <textarea required name="questions" id="question" cols="30" rows="2"></textarea>
+        </fieldset>
+        <br>
+        <input required type="checkbox" name="consentement"> * J'accepte le traitement informatique de ce formulaire
+        <br>
+        <br>
+        <button name="envoyer" class="bouton" type="submit">Envoyer</button>
+        <button name="annuler" class="bouton" type="reset">Annuler</button>
+    </form>
+
+    <footer class="barnoir">
+
+        <ul>
+            <li><a class="liencolor" href="#">Mentions légales</a></li>
+            <li><a class="liencolor" href="#">Horaires</a></li>
+            <li><a class="liencolor" href="#">Plan du site</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

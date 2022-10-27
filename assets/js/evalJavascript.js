@@ -26,17 +26,22 @@
 
 
 
-// ______________________________2 : Table de multiplication_________________________________FINI
-//______Ouvrir la console avant !_________________
+// ______________________________2 : Table de multiplication_________________________________
 
-// mult = prompt("Saisir le multiplicateur ");
-// console.log("Table de multiplication par " + mult);
 
-// for (i=0; i<=10; i++)
-// {
-//     resultat = mult * i;
-//     console.log(  mult + " * "+i+" = "+resultat);
-// }
+
+function tableMult(_x)
+{
+  
+ console.log(arguments[_x]);
+
+}
+
+
+
+
+
+    
 
 // ______________________________3 : recherche d'un prénom________________________________FINI 
 
@@ -63,5 +68,10 @@
 
 
 
-// ____________________________ 5 : vérification d'un formulaire_________________________________
+// ____________________________ 5 : vérification d'un formulaire______(ce trouve dans evalJavascript/assets/js/evalContact)____
+
+
+// a utiliser !
+// toLowerCase(),
+// toUpperCase(),
 
