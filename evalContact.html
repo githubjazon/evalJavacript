@@ -24,7 +24,7 @@
     <h1>Put**n de formulaire</h1>
     <hr>
 
-    <form name="RegForm" action="http://bienvu.net/script.php" onsubmit="return W3docs()" method="post" class="w3docs">
+    <form name="formulaire" action="http://bienvu.net/script.php"  method="post" >
         <p>* Ces zones sont obligatoires</p>
         <br>
         <fieldset class="coord">
@@ -35,7 +35,7 @@
           
             <label for="prenom">Votre prénom* : </label> 
             <input required type="text" name="prenom" id="prenom"><br>
-            <br>
+               <span id="prenomManquant"></span>   <br>
 
             <p class="sexe" >sexe* : </p>
 
@@ -81,8 +81,8 @@
         <input required type="checkbox" name="consentement"> * J'accepte le traitement informatique de ce formulaire
         <br>
         <br>
-        <button name="envoyer" class="bouton" type="submit">Envoyer</button>
-        <button name="annuler" class="bouton" type="reset">Annuler</button>
+        <button name="envoyer" class="bouton" id="boutonEnvoyer" type="submit">Envoyer</button>
+        <button name="annuler" class="bouton" id="boutonAnnuler" type="reset">Annuler</button>
     </form>
 
     <footer class="barnoir">
