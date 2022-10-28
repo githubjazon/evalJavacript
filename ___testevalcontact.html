@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestContact</title>
+    <link rel="stylesheet" href="/assets/css/___testEvalContact.css">
+</head>
+<body>
+    <h2>Vos coordonées : </h2><br>
+    <p class="obl" >*Ces zones sont obligatoires pour envoyer le formulaire </p>
+    <form id="form1" name="form1" method="post" onSubmit="return checkForm(this);">
+
+        <label id="soci"  for="societe">Société : </label>
+        <input type="text" name= "societe"      /> *<br>
+        <br>
+
+        <label id="pers"  for="personne">Personne à contacter : </label>
+        <input type="text" name= "personne"   /> *<br>
+        <br>
+
+        <label id="adres"  for="adresse">Adresse de l'entreprise : </label>
+      <textarea name="adresse" id="adres1" cols="30" rows="3"></textarea>
+        <br>
+        <br>
+        <label id="code"  for="code">Code postal : </label>
+        <input type="text" name= "code"   /> *<br>
+        <br>
+
+        <input type="submit" id="idSubForm1" name="subForm1" value="Envoyer" />
+        <input type="reset" id="reset" name="reset" value="Effacer">
+
+    </form>
+    <script src="/assets/js/___testEvalContact.js" ></script>
+</body>
+</html>

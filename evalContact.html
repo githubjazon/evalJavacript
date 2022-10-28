@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  
 
     <nav class="barnoir">
         <ul>
@@ -21,21 +20,21 @@
         </ul>
     </nav>
  
-    <h1>Put**n de formulaire</h1>
+    <h1>Formulaire pas très sympatique</h1>
     <hr>
 
-    <form name="formulaire" action="http://bienvu.net/script.php"  method="post" >
+    <form name="redForm" action="http://bienvu.net/script.php" onsubmit="return w3docs()" method="post" class="w3docs" >
         <p>* Ces zones sont obligatoires</p>
         <br>
         <fieldset class="coord">
             <legend>Vos Coordonnées</legend>
             
             <label for="nom">Votre nom* : </label>
-            <input required type="text" name="nom" id="nom" ><br>
+            <input required type="text" name="nom" id="nom" value=""><br>
           
             <label for="prenom">Votre prénom* : </label> 
-            <input required type="text" name="prenom" id="prenom"><br>
-               <span id="prenomManquant"></span>   <br>
+            <input required type="text" name="prenom" id="prenom" value="" ><br>
+             
 
             <p class="sexe" >sexe* : </p>
 
@@ -78,11 +77,15 @@
             <textarea required name="questions" id="question" cols="30" rows="2"></textarea>
         </fieldset>
         <br>
-        <input required type="checkbox" name="consentement"> * J'accepte le traitement informatique de ce formulaire
+        <input required type="checkbox" id="ckbx" name="consentement"> * J'accepte le traitement informatique de ce formulaire
         <br>
         <br>
-        <button name="envoyer" class="bouton" id="boutonEnvoyer" type="submit">Envoyer</button>
-        <button name="annuler" class="bouton" id="boutonAnnuler" type="reset">Annuler</button>
+            <div class="boutons">
+                <input type="submit" id="bt1" value="Envoyer" name="Envoyer">
+                <input type="reset"  id="bt2" value="Réinitialiser" name="Reset">
+            </div>
+
+
     </form>
 
     <footer class="barnoir">
@@ -93,6 +96,7 @@
             <li><a class="liencolor" href="#">Plan du site</a></li>
         </ul>
     </footer>
+    <script src="/assets/js/evalContact.js" ></script>
 </body>
 
 </html>

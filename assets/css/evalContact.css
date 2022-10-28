@@ -72,10 +72,17 @@ ul {
     background-color: rgb(0, 204, 0)
 }
 
-.bouton {
-    color: blueviolet;
+#bt1,
+#bt2 {
+    color: rgb(255, 153, 0);
+background-color: rgb(153, 0, 255);
+border-color: rgb(9, 255, 0);
+border-radius: 9px;
+
 
 }
+
+
 
 .coord,
 .demande {

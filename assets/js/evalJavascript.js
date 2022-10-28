@@ -1,42 +1,44 @@
 // ______________________________1 : Calcul du nombre de jeunes, de moyens et de vieux_________________________________
 
-// j = 0;
-// a = 0;
-// v = 0;
-// c = 0;
-// var age;
-// do {
-//   age = window.prompt("Entrez votre âge");
-//   if ( age <=20) {
-//     j++;
-   
-//     if ( age <=40) {
-//         a++;
-        
+// var j = 0;
+// var a = 0;
+// var v = 0;
+// var c = (p>=100);
+//  do
+//  (p) = window.prompt("Entrez votre âge");
+// while (p < 100);
+// if (p < 20) {
+//    j = 0;
+//    j = +1;
+// } else if ( p <= 40)
+//   {
+//     a = 0;
+//     a = +1;
+// } else if( p <=100)
+//   {
+//     v = 0 ;
+//     v = +1 ;
 //   }
-//   else if ((age <=100)) {
-//     v++;
-//   }
-// }
-// }
-// while (age > 100) {
-//     window.alert("Il y a " + "" + j + "" + " jeunes\n " + "Il y a " + "" + a + "" + " adulte\n " + " Il y a " + "" + v + "" +" vieux\n " + " dont "+ c + "" + " centenaire ");
-// }
- 
-
-
+// window.alert("Il y a" + " " + j + " " + "jeunes\n" + "Il y a" + " " + a + " " + "adultes\n" + "Il y a " + " " + v +  " " + "vieux\n" + "dont" +" "+ c + "centenaire");
 
 // ______________________________2 : Table de multiplication_________________________________
 
 
+a=0;
+ do{
+    a=prompt("Saisissez un nomre entier");
+ }while(isNaN(a) || a%1!==0);
+ 
+ document.write("<h4>La table de multiplication du nombre: "+a+"</h4>")
+ document.write("<table border >");
 
-function tableMult(_x)
-{
-  
- console.log(arguments[_x]);
-
-}
-
+ for( i=1;i<=10;i++){
+    document.write("<tr>");
+    document.write("<td>"+a+" x "+i+" =</td>");
+    document.write("<td>"+a*i+"</td>");
+    document.write("</tr>");
+ }
+ document.write("</table>");
 
 
 
