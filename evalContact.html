@@ -20,20 +20,20 @@
         </ul>
     </nav>
  
-    <h1>Formulaire pas très sympatique</h1>
+    <h1>For Müller</h1>
     <hr>
-
-    <form name="redForm" action="http://bienvu.net/script.php" onsubmit="return w3docs()" method="post" class="w3docs" >
+    <!-- action="http://bienvu.net/script.php" -->
+    <form id="form1" >
         <p>* Ces zones sont obligatoires</p>
         <br>
         <fieldset class="coord">
             <legend>Vos Coordonnées</legend>
             
             <label for="nom">Votre nom* : </label>
-            <input required type="text" name="nom" id="nom" value=""><br>
+            <input type="text" name="nom" id="nom" value=""><br>
           
             <label for="prenom">Votre prénom* : </label> 
-            <input required type="text" name="prenom" id="prenom" value="" ><br>
+            <input  type="text" name="prenom" id="prenom" value="" ><br>
              
 
             <p class="sexe" >sexe* : </p>
@@ -49,7 +49,7 @@
             <input type="date"          name="date" id="date"><br>
 
             <label for="cp">Code postal* :  </label>
-            <input required type="text" name="cp" id="cp"><br>
+            <input  type="text" name="cp" id="cp"><br>
 
             <label for="adresse">Adresse :        </label>
             <input type="text"          name="adresse" id="adresse"><br>
@@ -58,36 +58,38 @@
             <input type="text"          name="ville" id="ville"><br>
 
             <label for="mail">Email* :     </label>      
-                <input required type="text" name="mail" placeholder="dave.loper@afpa.fr" id="mail" size="20" maxlength="50"><br>
+                <input  type="text" name="mail" placeholder="dave.loper@afpa.fr" id="mail" size="20" maxlength="50"><br>
 
         </fieldset><br>
         <br>
         <fieldset class="coord">
             <legend >Votre demande</legend>
-            <label for="sujet" name="sujet">Sujet* :</label>
-            <select type="text" value="" name="sujet" id="sujet">
-                <option required value="selected" placeholder> Selectionner un sujet</option>
-                <option required value="mcm">Mes commandes</option>
-                <option required value="ques">Question sur un produit</option>
-                <option required value="rec">Réclamation</option>
-                <option required value="autres">Autres</option>
+            <label id="sujetcolor" for="sujet" name="sujet">Sujet* :</label>
+            <select id="sujet"  type="text" value="" name="sujet" >
+                <option   value="selected" placeholder> Selectionner un sujet</option>
+                <option  value="mcm">Mes commandes</option>
+                <option  value="ques">Question sur un produit</option>
+                <option  value="rec">Réclamation</option>
+                <option  value="autres">Autres</option>
             </select><br>
             <br>
             <label for="question">Votre question* :</label>
-            <textarea required name="questions" id="question" cols="30" rows="2"></textarea>
+            <textarea name="questions" id="question" cols="30" rows="2"></textarea>
         </fieldset>
         <br>
-        <input required type="checkbox" id="ckbx" name="consentement"> * J'accepte le traitement informatique de ce formulaire
+        <input id="ckbx" type="checkbox"  name="consentement"> * J'accepte le traitement informatique de ce formulaire
         <br>
         <br>
             <div class="boutons">
                 <input type="submit" id="bt1" value="Envoyer" name="Envoyer">
-                <input type="reset"  id="bt2" value="Réinitialiser" name="Reset">
+                <button type="reset" id="reset" >Réinitialiser</button>
+                <p id="erreur"></p>
             </div>
 
 
     </form>
 
+<br>
     <footer class="barnoir">
 
         <ul>

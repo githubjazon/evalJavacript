@@ -1,7 +1,7 @@
 /*index*/
 
 html {
-    background-color: rgb(151, 73, 0);
+    background-color: rgb(223, 223, 223);
 }
 
 .jrdt {
@@ -56,24 +56,17 @@ ul {
     width: 100%;
 }
 
-#nom,
-#prenom,
-#date,
-#cp,
-#adresse,
-#ville,
-#mail {
+#nom,#prenom,#date,#cp,#adresse,#ville,#mail,#ckbx {
     border-color: orange;
-    background-color: blueviolet
+    background-color: rgb(212, 127, 0)
 }
 
 
-#sujet,#question {
+#question {
     background-color: rgb(0, 204, 0)
 }
 
-#bt1,
-#bt2 {
+#bt1,#reset {
     color: rgb(255, 153, 0);
 background-color: rgb(153, 0, 255);
 border-color: rgb(9, 255, 0);
@@ -92,10 +85,10 @@ border-radius: 9px;
 }
 
 h1{
-    color:rgb(0, 255, 64);
+    color:rgb(255, 81, 0);
 }
 
-#prenomM{
+#erreur{
     color: red;
 }
 @media screen and (max-width: 768px) {

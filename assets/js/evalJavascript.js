@@ -24,21 +24,21 @@
 // ______________________________2 : Table de multiplication_________________________________
 
 
-a=0;
- do{
-    a=prompt("Saisissez un nomre entier");
- }while(isNaN(a) || a%1!==0);
+// a=0;
+//  do{
+//     a=prompt("Saisissez un nomre entier");
+//  }while(isNaN(a) || a%1!==0);
  
- document.write("<h4>La table de multiplication du nombre: "+a+"</h4>")
- document.write("<table border >");
+//  document.write("<h4>La table de multiplication du nombre: "+a+"</h4>")
+//  document.write("<table border >");
 
- for( i=1;i<=10;i++){
-    document.write("<tr>");
-    document.write("<td>"+a+" x "+i+" =</td>");
-    document.write("<td>"+a*i+"</td>");
-    document.write("</tr>");
- }
- document.write("</table>");
+//  for( i=1;i<=10;i++){
+//     document.write("<tr>");
+//     document.write("<td>"+a+" x "+i+" =</td>");
+//     document.write("<td>"+a*i+"</td>");
+//     document.write("</tr>");
+//  1}
+//  document.write("</table>");
 
 
 
@@ -47,13 +47,13 @@ a=0;
 
 // ______________________________3 : recherche d'un prénom________________________________FINI 
 
-// var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
-// var saisie = window.prompt(`Veuillez choisir un prénom parmi : ${[...tab]}.`)
-// if(tab.includes(saisie)){
-// 	tab.splice(tab.indexOf(saisie),1);
-// 	tab.push(" ");
-// 	alert(("Il reste : ") + tab);
-// }
+//  var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
+//  var saisie = window.prompt(`Veuillez choisir un prénom parmi : ${[...tab]}.`)
+//  if(tab.includes(saisie)){
+//  	tab.splice(tab.indexOf(saisie),1);
+//  	tab.push(" ");
+//  	alert(("Il reste : ") + tab);
+//  }
 // else{alert("Mauvais prénom saisie")}
 
 // ______________________________4 : total d'une commande__________________________________
