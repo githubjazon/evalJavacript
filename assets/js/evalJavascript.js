@@ -1,25 +1,26 @@
-// ______________________________1 : Calcul du nombre de jeunes, de moyens et de vieux_________________________________
+// ______________________________1 : Calcul du nombre de jeunes, de moyens et de vieux______________EN_COURS
 
-// var j = 0;
-// var a = 0;
-// var v = 0;
-// var c = (p>=100);
-//  do
-//  (p) = window.prompt("Entrez votre âge");
-// while (p < 100);
-// if (p < 20) {
-//    j = 0;
-//    j = +1;
-// } else if ( p <= 40)
-//   {
-//     a = 0;
-//     a = +1;
-// } else if( p <=100)
-//   {
-//     v = 0 ;
-//     v = +1 ;
-//   }
-// window.alert("Il y a" + " " + j + " " + "jeunes\n" + "Il y a" + " " + a + " " + "adultes\n" + "Il y a " + " " + v +  " " + "vieux\n" + "dont" +" "+ c + "centenaire");
+var jeunes ;
+var adultes ;
+var vieux ;
+do
+(personnes) = window.prompt("Entrez votre âge");
+while ((personnes < 100));
+if ((personnes < 20)) {
+var jeunes = 0;
+var jeunes = +1;
+} else if ((personnes > 20 &&  personnes <= 40 ))
+{
+adultes = 0;
+adultes = +1;
+} else if((personnes >= 40 && personnes <0))
+{
+vieux = 0 ;
+vieux = +1 ;
+}
+window.alert("Il y a" + " " + jeunes + " " + "jeunesn" + "Il y a" + " " +
+adultes + " " + "adultesn" + "Il y a " + " " + vieux + " " + "vieuxn" +
+"dont" + " " + "1" + " " + "centenaire");
 
 // ______________________________2 : Table de multiplication_________________________________FINI
 
