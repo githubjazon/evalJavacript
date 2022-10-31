@@ -35,29 +35,29 @@
             <label for="prenom">Votre prénom* : </label> 
             <input  type="text" name="prenom" id="prenom" value="" ><br>
              
-
-            <p class="sexe" >sexe* : </p>
-
-            <label for="genre"></label>
-            <input  type="radio" name="genre" value="féminin" id="genre"> Féminin 
-
-            <label for="genre2"></label>
-            <input type="radio" name="genre2" value="Masculin" id="genre2"> Masculin <br>
             <br>
+               <div id="sex" >
+                    <label >sexe*</label> <br>
+                    <br>
+                    <input type="radio" name="flexRadioDefault" value="feminin" id="feminin"> Féminin 
+                    <input type="radio" name="flexRadioDefault" value="masculin" id="masculin"> Masculin <br>
+                    <br>
+
+               </div>
 
             <label for="date">Date de naissance : </label>
-            <input type="date"          name="date" id="date"><br>
+            <input type="date" name="date" id="date"><br>
 
             <label for="cp">Code postal* :  </label>
             <input  type="text" name="cp" id="cp"><br>
 
-            <label for="adresse">Adresse :        </label>
-            <input type="text"          name="adresse" id="adresse"><br>
+            <label for="adresse">Adresse :   </label>
+            <input type="text" name="adresse" id="adresse"><br>
 
-            <label for="ville">Ville :     </label>
-            <input type="text"          name="ville" id="ville"><br>
+            <label for="ville">Ville :  </label>
+            <input type="text" name="ville" id="ville"><br>
 
-            <label for="mail">Email* :     </label>      
+            <label for="mail">Email* :  </label>      
                 <input  type="text" name="mail" placeholder="dave.loper@afpa.fr" id="mail" size="20" maxlength="50"><br>
 
         </fieldset><br>
@@ -77,12 +77,12 @@
             <textarea name="questions" id="question" cols="30" rows="2"></textarea>
         </fieldset>
         <br>
-        <input id="ckbx" type="checkbox"  name="consentement"> * J'accepte le traitement informatique de ce formulaire
+        <input id="ckbx" type="checkbox" value="ok" name="consentement"> * J'accepte le traitement informatique de ce formulaire
         <br>
         <br>
             <div class="boutons">
-                <input type="submit" id="bt1" value="Envoyer" name="Envoyer">
-                <button type="reset" id="reset" >Réinitialiser</button>
+                <input type="submit" id="bt1" value="Envoyer">
+                <input type="reset" id="reset" value="Réinitialiser">
                 <p id="erreur"></p>
             </div>
 
