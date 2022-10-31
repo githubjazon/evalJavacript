@@ -21,24 +21,28 @@
 //   }
 // window.alert("Il y a" + " " + j + " " + "jeunes\n" + "Il y a" + " " + a + " " + "adultes\n" + "Il y a " + " " + v +  " " + "vieux\n" + "dont" +" "+ c + "centenaire");
 
-// ______________________________2 : Table de multiplication_________________________________
+// ______________________________2 : Table de multiplication_________________________________FINI
 
 
-// a=0;
-//  do{
-//     a=prompt("Saisissez un nomre entier");
-//  }while(isNaN(a) || a%1!==0);
+function mult () {
+mult = 0;
+
+}
+ do{
+    mult=prompt("Saisissez un nomre entier");
+ }while(isNaN(mult) || mult%1!==0);
  
-//  document.write("<h4>La table de multiplication du nombre: "+a+"</h4>")
-//  document.write("<table border >");
+ document.write("<h4>Table de multiplication du nombre: "+mult+"</h4>")
+ document.write("<table border >");
 
-//  for( i=1;i<=10;i++){
-//     document.write("<tr>");
-//     document.write("<td>"+a+" x "+i+" =</td>");
-//     document.write("<td>"+a*i+"</td>");
-//     document.write("</tr>");
-//  1}
-//  document.write("</table>");
+ for( i=1;i<=10;i++){
+    document.write("<tr>");
+    document.write("<td>"+mult+" x "+i+" =</td>");
+    document.write("<td>"+mult*i+"</td>");
+    document.write("</tr>");
+ 1}
+ document.write("</table>");
+
 
 
 

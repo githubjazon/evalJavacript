@@ -34,9 +34,7 @@ document.getElementById("form1").addEventListener("submit", function(e) {
  
 
 //ho le bordel...
-   function valid() {
-    
-   }
+ 
 if (!masculin || feminin) {
     erreur = "sex ?";
 }
