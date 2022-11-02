@@ -5,10 +5,8 @@
 //  v = 0;
 //  i = 0;
 
-
 //  do {
 //     gen = prompt("Entrez votre âge");
-
     
 //     if (gen < 20 ) {
 //         j ++;
@@ -28,7 +26,6 @@
     
 //  }
 
-
 // while(gen < 100) {
 //     i++;
 //     alert("il y a " + j + " jeunes" + ", " + a + " adultes" +  ", " + v + " vieux, dont " + i + " centenaire ");
@@ -37,7 +34,6 @@
 
 
 
-  
 
 
 
@@ -45,7 +41,6 @@
 
 
 // ______________________________2 : Table de multiplication_________________________________FINI
-
 
 // function mult () {
 // mult = 0;
@@ -66,6 +61,13 @@
 //  1}
 //  document.write("</table>");
 
+
+
+
+
+
+
+
 // ______________________________3 : recherche d'un prénom________________________________FINI 
 
 //  var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
@@ -77,13 +79,19 @@
 //  }
 // else{alert("Mauvais prénom saisie")}
 
-// ______________________________4 : total d'une commande__________________________________EN_COURS
 
 
 
-pu = (prompt("Prix unitaire : "));
+
+
+
+
+
+// ______________________________4 : total d'une commande__________________________________EN_COURS___75%____
+
+pu = (prompt("Prix unitaire en euros : "));
 qtecom = (prompt("Quantité commandé : "));
-tot = (pu * qtecom);
+tot = pu * qtecom;
 
 if (tot <100) {
   rem = 0;
@@ -93,31 +101,41 @@ if (tot >=100 && tot <=200 ) {              //la remise est de 5% si TOT est com
   rem = 5/100;
 
 }
-if (tot >200) {                             //et de 10% au-delà
+if (tot >200) {                             // Remise de 10% au-delà de 200 €
   rem = 10/100;
 }
 
-  pap = tot * rem;
+  pap0 = tot * rem;
 
-  pap1 = tot - pap;
-  alert("prix à payer : " + pap1);
+  var pap1 = tot - pap0;
+  alert("Prix avant port : " + pap1 + " €");
 
-  
 
-  if (pap1 <500 ) {
-por = 2/100;
-port = pap1 * por;
-port2 = port + pap1;
-port3 = port2 - pap1;
-console.log("port : " + port3);
+  if (pap1 <500 ) {                      
+
+var por = 2/100;                               // Dans le cas contraire, le port est de 2%                                                             
+var port = pap1 * por;
+var port2 = port + pap1;
+var port3 = port2 - pap1;
+port3 = Math.min(6); 
+port4 = pap1 + port3;
+res = Math.round(port4 * 100) / 100;
+alert("Prix à payer : " + res + " €" );
+
+
+         // La valeur minimale du port à payer est de 6 €                                                                                   
+ 
+  }
+  if (pap1 > 500 ) {                           // Le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €
+    var por = 0;
+    console.log(por);
+    var port2 = por + pap1;
+    console.log(por);
+    var port3 = port2 - pap1;
+    console.log(port3);
+      
   }
 
-
-
-// port = (2% pap);
-
-// le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €. Dans le cas contraire, le port est de 2%
-// la valeur minimale du port à payer est de 6 €
 
 
 
