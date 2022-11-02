@@ -106,38 +106,35 @@ if (tot >200) {                             // Remise de 10% au-delà de 200 €
 }
 
   pap0 = tot * rem;
-
   var pap1 = tot - pap0;
+  console.log(pap1);
   alert("Prix avant port : " + pap1 + " €");
 
 
+
+  if ( pap1 > 500 ) {                           // Le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €
+    por = 0;
+    port2 = por + pap1;
+    port3 = port2 - pap1;
+    alert("Frais de port OFFERT !");
+  }
+
   if (pap1 <500 ) {                      
-
-var por = 2/100;                               // Dans le cas contraire, le port est de 2%                                                             
-var port = pap1 * por;
-var port2 = port + pap1;
-var port3 = port2 - pap1;
-port3 = Math.min(6); 
-port4 = pap1 + port3;
-res = Math.round(port4 * 100) / 100;
-alert("Prix à payer : " + res + " €" );
-
-
-         // La valeur minimale du port à payer est de 6 €                                                                                   
- 
+     por = 2/100;                            // Dans le cas contraire, le port est de 2%     
+     console.log("por = "+por);                                                                             
+     port = pap1 * por;
+    //  port = Math.min(6);
+     console.log("port minimum = "+port);
+     port2 = pap1 + port;
+     console.log("à payer = "+port2);
+     
+    res = Math.round(port2 * 100) / 100;
+    alert("Prix à payer : " + res + " €" );                                                                      
   }
-  if (pap1 > 500 ) {                           // Le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €
-    var por = 0;
-    console.log(por);
-    var port2 = por + pap1;
-    console.log(por);
-    var port3 = port2 - pap1;
-    console.log(port3);
-      
-  }
-
-
-
+  
+// if (port < 6) {
+//   port=Math.min(6);
+// }
 
 
 // ____________________________ 5 : vérification d'un formulaire______(ce trouve dans evalJavascript/assets/js/evalContact)____
