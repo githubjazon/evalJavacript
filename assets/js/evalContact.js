@@ -33,14 +33,10 @@ document.getElementById("form1").addEventListener("submit", function(e) {
     }
  
 
-//ho le bordel...
- 
-if (!masculin || feminin) {
-    erreur = "sex ?";
-}
+
+//manque genre
 
 
-//ho le bordel...
 
     if (!prenom.value) {
         erreur = "Veuillez renseigner un prenom";

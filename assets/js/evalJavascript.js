@@ -1,26 +1,48 @@
-// ______________________________1 : Calcul du nombre de jeunes, de moyens et de vieux______________EN_COURS
+// ______________________________1 : Calcul du nombre de jeunes, de moyens et de vieux______________FINI
 
-var jeunes ;
-var adultes ;
-var vieux ;
-do
-(personnes) = window.prompt("Entrez votre âge");
-while ((personnes < 100));
-if ((personnes < 20)) {
-var jeunes = 0;
-var jeunes = +1;
-} else if ((personnes > 20 &&  personnes <= 40 ))
-{
-adultes = 0;
-adultes = +1;
-} else if((personnes >= 40 && personnes <0))
-{
-vieux = 0 ;
-vieux = +1 ;
+ j = 0;
+ a = 0;
+ v = 0;
+ i = 0;
+
+
+ do {
+    gen = prompt("Entrez votre âge");
+
+    
+    if (gen < 20 ) {
+        j ++;
+      }
+    
+    if (gen >=20 && gen <40 ) {
+         a++;
+      }
+    
+    if (gen >40) {
+         v++;
+      }
+
+    if (gen >= 100 ) {
+        
+    }
+    
+ }
+
+
+while(gen < 100) {
+    i++;
+    alert("il y a " + j + " jeunes" + ", " + a + " adultes" +  ", " + v + " vieux, dont " + i + " centenaire ");
+ 
 }
-window.alert("Il y a" + " " + jeunes + " " + "jeunesn" + "Il y a" + " " +
-adultes + " " + "adultesn" + "Il y a " + " " + vieux + " " + "vieuxn" +
-"dont" + " " + "1" + " " + "centenaire");
+
+
+
+  
+
+
+
+
+
 
 // ______________________________2 : Table de multiplication_________________________________FINI
 
@@ -43,12 +65,6 @@ adultes + " " + "adultesn" + "Il y a " + " " + vieux + " " + "vieuxn" +
 //     document.write("</tr>");
 //  1}
 //  document.write("</table>");
-
-
-
-
-
-    
 
 // ______________________________3 : recherche d'un prénom________________________________FINI 
 
