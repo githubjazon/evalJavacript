@@ -3,24 +3,19 @@ document.getElementById("form1").addEventListener("submit", function(e) {
     var erreur;
     var nom = document.getElementById("nom");
     var prenom = document.getElementById("prenom");
-    var masculin = document.getElementById("masculin");
-    var feminin = document.getElementById("feminin");
+var masculin = document.getElementById("masculin");
+var feminin = document.getElementById("feminin");
     var cp = document.getElementById("cp");
     var mail = document.getElementById("mail");
     var sujet = document.getElementById("sujet");
     var question = document.getElementById("question");
     
 
-
-    if(!ckbx.value) {
-        erreur = "Veuillez cocher la case";
-    }
-
     if (!question.value) {
         erreur = "Veuillez renseigner une question";
     }
 
-    if (!sujet.value) {
+    if (sujet) {
         erreur = "Veuillez renseigner un sujet";
     }
 
@@ -32,9 +27,12 @@ document.getElementById("form1").addEventListener("submit", function(e) {
         erreur = "Veuillez renseigner un cp";
     }
  
-
-
-//manque genre
+if (masculin.checked==true){
+    erreur = "masc";
+    }
+    else if (feminin.checked==true) {
+        erreur = "femi";
+    }
 
 
 
@@ -53,15 +51,5 @@ document.getElementById("form1").addEventListener("submit", function(e) {
         return false;
     } else {
         alert('formulaire envoyé !');
-    
     }
-
-  
-
-  
-
-       
-
-
-
 });
