@@ -178,4 +178,27 @@
 
       // ____________________________________ Exo js 10.2___________________________________
 
-  
+   // ____________________________________ Exo js 13___________________________________
+
+
+
+   // var a = prompt("Saissisez un chiffre ");
+   // while(a);
+
+      // ____________________________________ Exo js 15.1___________________________________
+
+
+//    document.getElementById("control").innerHTML = "Saisissez un texte puis le bouton 'Contrôle'";
+ 
+//    var b = document.getElementById("button");
+
+//  b.addEventListener("click", function() {
+
+//       var a = document.getElementById("patrick").value;  
+//       alert("Vous avez saisi : " + a );
+//  });
+
+
+    // ____________________________________ Exo js 15.2___________________________________
+
+
