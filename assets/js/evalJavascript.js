@@ -72,12 +72,13 @@
 
 //  var tab = ["jérémy","odd","yumi","hiroki","ulrich","aelita","william","milly","sissi","jim"];
 //  var saisie = window.prompt(`Veuillez choisir un prénom parmi : ${[...tab]}.`)
+
 //  if(tab.includes(saisie)){
 //  	tab.splice(tab.indexOf(saisie),1);
 //  	tab.push(" ");
 //  	alert(("Il reste : ") + tab);
 //  }
-// else{alert("Mauvais prénom saisie")}
+// else{alert("Mauvais prénom saisie") + location.reload();} //actualise la page si on se trompe de nom 
 
 
 
@@ -89,47 +90,47 @@
 
 // ______________________________4 : total d'une commande__________________________________EN_COURS___80%____
 
-var pu = (prompt("Prix unitaire en euros : "));
-var qtecom = (prompt("Quantité commandé : "));
-var tot = pu * qtecom;
+// var pu = (prompt("Prix unitaire en euros : "));
+// var qtecom = (prompt("Quantité commandé : "));
+// var tot = pu * qtecom;
 
-if ( tot <100) {
-  rem = 0;
-}
+// if ( tot <100) {
+//   rem = 0;
+// }
 
-if ( tot >=100 && tot <=200 ) {              //la remise est de 5% si TOT est compris entre 100 et 200 €
-  rem = 5/100;
+// if ( tot >=100 && tot <=200 ) {              //la remise est de 5% si TOT est compris entre 100 et 200 €
+//   rem = 5/100;
 
-}
-if ( tot >200) {                             // Remise de 10% au-delà de 200 €
-   rem = 10/100;
-}
+// }
+// if ( tot >200) {                             // Remise de 10% au-delà de 200 €
+//    rem = 10/100;
+// }
 
-  pap0 = tot * rem;
-  console.log(pap0);
-  var pap1 = tot - pap0;
-  alert("Prix avant port : " + pap1 + " €");
+//   pap0 = tot * rem;
+//   console.log(pap0);
+//   var pap1 = tot - pap0;
+//   alert("Prix avant port : " + pap1 + " €");
 
 
-  if ( pap1 > 500 ) {                           // Le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €
-    por = 0;
-    port2 = por + pap1;
-    port3 = port2 - pap1;
-    alert("Frais de port OFFERT !");
-  }
+//   if ( pap1 > 500 ) {                           // Le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €
+//     por = 0;
+//     port2 = por + pap1;
+//     port3 = port2 - pap1;
+//     alert("Frais de port OFFERT !");
+//   }
 
-  if ( pap1 < 500 ) {                      
-    por = 2/100;                     // Dans le cas contraire, le port est de 2%                                                                  
-    port = pap1 * por;
-    port2 = pap1 + port;                                                  
-  }
+//   if ( pap1 < 500 ) {                      
+//     por = 2/100;                     // Dans le cas contraire, le port est de 2%                                                                  
+//     port = pap1 * por;
+//     port2 = pap1 + port;                                                  
+//   }
   
-  if ( port <= 6 ) {
-    var port = Math.min(6);                 // La valeur minimale du port à payer est de 6 €                                                            
-    var port2 = port + pap1;
-    res = Math.round(port2 * 100) / 100;
-    alert("Prix à payer : " + res + " €" );  
-  }
+//   if ( port <= 6 ) {
+//     var port = Math.min(6);                 // La valeur minimale du port à payer est de 6 €                                                            
+//     var port2 = port + pap1;
+//     res = Math.round(port2 * 100) / 100;
+//     alert("Prix à payer : " + res + " €" );  
+//   }
 
 
 
