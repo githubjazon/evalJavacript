@@ -2,33 +2,18 @@ document.getElementById("form1").addEventListener("submit", function(e) {
 
     var erreur;
   
-    
+    var inputs = document.getElementsByTagName("input");
 
-if (ckbx.checked == false) {
-    erreur = "Veuillez cocher la case ";
-}
-
-    if (!question.value) {
-        erreur = "Veuillez renseigner une question";
+    if (inputs["email"] = "" && ("@") && (".") ) {
+        erreur = "Veuillez saisir un mail valide ";
     }
 
-    if (!mail.value) {
-        erreur = "Veuillez saisir votre mail";
-    }
-    
-
-    if (!cp.value) {
-        erreur = "Veuillez saisir votre code postal";
+    for (var i = 0; i < inputs.length; i++) {
+        if (!inputs[i].value) {
+            erreur = "Veuillez compléter tous les champs ";
+        }
     }
 
-    if (!prenom.value) {
-        erreur = "Veuillez siasir votre prenom";
-    }
-
-    if (!nom.value) {
-        erreur = "Veuillez saisir votre nom";
-    }
-  
     if (erreur) {
         e.preventDefault();
         document.getElementById("erreur").innerHTML = erreur;
