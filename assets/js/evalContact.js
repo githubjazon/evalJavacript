@@ -1,10 +1,16 @@
 document.getElementById("form1").addEventListener("submit", function(e) {
 
+
+
+
+
+
+    
     var erreur;
   
     var inputs = document.getElementsByTagName("input");
 
-    if (inputs["email"] = "" && ("@") && (".") ) {
+    if (inputs["mail"] === ("@")) {
         erreur = "Veuillez saisir un mail valide ";
     }
 
@@ -13,6 +19,10 @@ document.getElementById("form1").addEventListener("submit", function(e) {
             erreur = "Veuillez compléter tous les champs ";
         }
     }
+
+
+
+
 
     if (erreur) {
         e.preventDefault();
