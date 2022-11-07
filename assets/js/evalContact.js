@@ -2,11 +2,9 @@ document.getElementById("form1").addEventListener("submit", function(e) {
 
     var erreur;
   
-    var inputs = document.getElementsByTagName("input");
+var codepostal = document.getElementById("cp");
 
-    if (inputs["mail"] === ("@")) {
-        erreur = "Veuillez saisir un mail valide ";
-    }
+    var inputs = document.getElementsByTagName("input" && "select" && "textarea");
 
     for (var i = 0; i < inputs.length; i++) {
         if (!inputs[i].value) {
@@ -21,5 +19,11 @@ document.getElementById("form1").addEventListener("submit", function(e) {
     } else {
         alert('formulaire envoyé !');
     }
+
+    if (! codepostal.match(/([0-9]){5}/)){
+        console.log(cp);
+        erreur = "gfgfd";
+    }
+    
 });
 
