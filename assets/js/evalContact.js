@@ -22,7 +22,7 @@ var codepostal = document.getElementById("cp");
 
     if (! codepostal.match(/([0-9]){5}/)){
         console.log(cp);
-        erreur = "gfgfd";
+        erreur = "Mauvais format ";
     }
     
 });
