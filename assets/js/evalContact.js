@@ -1,11 +1,5 @@
 document.getElementById("form1").addEventListener("submit", function(e) {
 
-
-
-
-
-
-    
     var erreur;
   
     var inputs = document.getElementsByTagName("input");
@@ -19,10 +13,6 @@ document.getElementById("form1").addEventListener("submit", function(e) {
             erreur = "Veuillez compléter tous les champs ";
         }
     }
-
-
-
-
 
     if (erreur) {
         e.preventDefault();
